@@ -16,7 +16,7 @@ import App from './components/App';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL + '/LoginForm'}>
         <App />
       </BrowserRouter>
     </Provider>
