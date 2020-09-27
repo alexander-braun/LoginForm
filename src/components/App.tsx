@@ -5,6 +5,7 @@ import {
   Route,
   Switch,
   Redirect,
+  HashRouter,
 } from 'react-router-dom';
 import LoginForm from './loginform';
 import RecoverPasswordForm from './recover-password';
@@ -17,24 +18,14 @@ function App(): JSX.Element {
   console.log(process.env.PUBLIC_URL);
   return (
     <>
-      <ToggleFeatures />
-      <Router history={History}>
-        <Switch>
-          <Route exact path='/login'>
-            <LoginForm />
-          </Route>
-          <Route exact path='/recover-password'>
-            <RecoverPasswordForm />
-          </Route>
-          <Route exact path='/logged-in'>
-            <LoggedIn />
-          </Route>
-          <Route exact path='/register'>
-            <Register />
-          </Route>
-          <Redirect exact from='/' to='/login' />
-        </Switch>
-      </Router>
+      <HashRouter basename='/'>
+        <ToggleFeatures />
+        <Route exact path='/login' component={LoginForm} />
+        <Route exact path='/recover-password' component={RecoverPasswordForm} />
+        <Route exact path='/logged-in' component={LoggedIn} />
+        <Route exact path='/register' component={Register} />
+        <Redirect from='/' to='/login' />
+      </HashRouter>
     </>
   );
 }
