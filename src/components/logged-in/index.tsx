@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.jpg';
+import logo from '../../img/logo.jpg';
 import { connect } from 'react-redux';
 import { Authorized } from '../../actions/constants';
 import { AppState } from '../../reducers';

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 //Img
-import logo from './logo.jpg';
+import logo from '../../img/logo.jpg';
 
 //Redux stuff
 import { Authorized } from '../../actions/constants';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 //Img
-import logo from './logo.jpg';
+import logo from '../../img/logo.jpg';
 
 /**
  * Register Redirect Component
