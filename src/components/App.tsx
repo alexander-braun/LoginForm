@@ -8,6 +8,7 @@ import LoggedIn from './logged-in';
 import Register from './register';
 
 function App(): JSX.Element {
+  console.log(process.env.PUBLIC_URL);
   return (
     <>
       <ToggleFeatures />

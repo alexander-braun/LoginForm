@@ -7,8 +7,7 @@ import { Provider } from 'react-redux';
 //Styles
 import './styles/main.css';
 
-//Helper
-import history from './helper/history';
+//Redux store
 import store from './store';
 
 //Components
