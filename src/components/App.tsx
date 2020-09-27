@@ -1,5 +1,11 @@
 import React from 'react';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
+import {
+  Router,
+  BrowserRouter,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
 import LoginForm from './loginform';
 import RecoverPasswordForm from './recover-password';
 import History from '../helper/history';
@@ -12,7 +18,7 @@ function App(): JSX.Element {
   return (
     <>
       <ToggleFeatures />
-      <Router history={History}>
+      <BrowserRouter basename='/'>
         <Switch>
           <Route exact path='/login'>
             <LoginForm />
@@ -28,7 +34,7 @@ function App(): JSX.Element {
           </Route>
           <Redirect exact from='/' to='/login' />
         </Switch>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }
