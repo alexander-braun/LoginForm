@@ -18,7 +18,7 @@ function App(): JSX.Element {
   return (
     <>
       <ToggleFeatures />
-      <BrowserRouter basename='/'>
+      <Router history={History}>
         <Switch>
           <Route exact path='/login'>
             <LoginForm />
@@ -34,7 +34,7 @@ function App(): JSX.Element {
           </Route>
           <Redirect exact from='/' to='/login' />
         </Switch>
-      </BrowserRouter>
+      </Router>
     </>
   );
 }
