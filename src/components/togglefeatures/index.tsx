@@ -14,18 +14,20 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures) => {
 
   const handleChange = (e: React.FormEvent<HTMLInputElement>): void => {
     const id = e.currentTarget.id;
-    if (
-      id === 'recover' ||
-      id === 'icons' ||
-      id === 'external' ||
-      id === 'register'
-    ) {
-      dispatch(
-        toggleLoginOptions({
-          ...loginOptions,
-          [id]: !loginOptions[id],
-        })
-      );
+    switch (id) {
+      case 'recover':
+      case 'icons':
+      case 'external':
+      case 'register':
+        dispatch(
+          toggleLoginOptions({
+            ...loginOptions,
+            [id]: !loginOptions[id],
+          })
+        );
+        break;
+      default:
+        return;
     }
   };
 

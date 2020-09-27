@@ -1,11 +1,18 @@
+import 'react-app-polyfill/ie9';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
-import './styles/main.css';
 import { Router } from 'react-router-dom';
-import history from './helper/history';
 import { Provider } from 'react-redux';
+
+//Styles
+import './styles/main.css';
+
+//Helper
+import history from './helper/history';
 import store from './store';
+
+//Components
+import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
