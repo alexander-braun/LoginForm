@@ -9,7 +9,9 @@ const LockiconSvg = () => {
       y='0px'
       viewBox='0 0 486.733 486.733'
       fill='rgba(231, 21, 56, 0.8)'
+      role='img'
     >
+      <title>Lock Closed Icon</title>
       <g>
         <path
           d='M403.88,196.563h-9.484v-44.388c0-82.099-65.151-150.681-146.582-152.145c-2.225-0.04-6.671-0.04-8.895,0

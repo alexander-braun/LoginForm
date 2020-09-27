@@ -8,7 +8,9 @@ const HiddenSvg = () => {
       y='0px'
       viewBox='0 0 469.44 469.44'
       className='login-form__svg'
+      role='img'
     >
+      <title>Closed Eye Icon</title>
       <g>
         <path d='M231.147,160.373l67.2,67.2l0.32-3.52c0-35.307-28.693-64-64-64L231.147,160.373z' />
         <path
