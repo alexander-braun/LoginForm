@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/alexander-braun/LoginForm/static/css/main.a0dec27a.chunk.css",
-    "main.js": "/alexander-braun/LoginForm/static/js/main.e93b4eee.chunk.js",
-    "main.js.map": "/alexander-braun/LoginForm/static/js/main.e93b4eee.chunk.js.map",
-    "runtime-main.js": "/alexander-braun/LoginForm/static/js/runtime-main.5cb7afbc.js",
-    "runtime-main.js.map": "/alexander-braun/LoginForm/static/js/runtime-main.5cb7afbc.js.map",
-    "static/js/2.b3760c5a.chunk.js": "/alexander-braun/LoginForm/static/js/2.b3760c5a.chunk.js",
-    "static/js/2.b3760c5a.chunk.js.map": "/alexander-braun/LoginForm/static/js/2.b3760c5a.chunk.js.map",
-    "index.html": "/alexander-braun/LoginForm/index.html",
-    "precache-manifest.d6c8a1e61a9dfa4492f2b47115813ed3.js": "/alexander-braun/LoginForm/precache-manifest.d6c8a1e61a9dfa4492f2b47115813ed3.js",
-    "service-worker.js": "/alexander-braun/LoginForm/service-worker.js",
-    "static/css/main.a0dec27a.chunk.css.map": "/alexander-braun/LoginForm/static/css/main.a0dec27a.chunk.css.map",
-    "static/js/2.b3760c5a.chunk.js.LICENSE.txt": "/alexander-braun/LoginForm/static/js/2.b3760c5a.chunk.js.LICENSE.txt",
-    "static/media/logo.jpg": "/alexander-braun/LoginForm/static/media/logo.d7ec9302.jpg"
+    "main.css": "/LoginForm/static/css/main.a0dec27a.chunk.css",
+    "main.js": "/LoginForm/static/js/main.e4eec6c8.chunk.js",
+    "main.js.map": "/LoginForm/static/js/main.e4eec6c8.chunk.js.map",
+    "runtime-main.js": "/LoginForm/static/js/runtime-main.86aad825.js",
+    "runtime-main.js.map": "/LoginForm/static/js/runtime-main.86aad825.js.map",
+    "static/js/2.2240aabb.chunk.js": "/LoginForm/static/js/2.2240aabb.chunk.js",
+    "static/js/2.2240aabb.chunk.js.map": "/LoginForm/static/js/2.2240aabb.chunk.js.map",
+    "index.html": "/LoginForm/index.html",
+    "precache-manifest.f0b90f63170378f32719253aa518064a.js": "/LoginForm/precache-manifest.f0b90f63170378f32719253aa518064a.js",
+    "service-worker.js": "/LoginForm/service-worker.js",
+    "static/css/main.a0dec27a.chunk.css.map": "/LoginForm/static/css/main.a0dec27a.chunk.css.map",
+    "static/js/2.2240aabb.chunk.js.LICENSE.txt": "/LoginForm/static/js/2.2240aabb.chunk.js.LICENSE.txt",
+    "static/media/logo.jpg": "/LoginForm/static/media/logo.d7ec9302.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5cb7afbc.js",
-    "static/js/2.b3760c5a.chunk.js",
+    "static/js/runtime-main.86aad825.js",
+    "static/js/2.2240aabb.chunk.js",
     "static/css/main.a0dec27a.chunk.css",
-    "static/js/main.e93b4eee.chunk.js"
+    "static/js/main.e4eec6c8.chunk.js"
   ]
 }
