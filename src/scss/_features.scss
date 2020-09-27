@@ -1,0 +1,32 @@
+.settings {
+  background-color: white;
+  margin-bottom: 10rem;
+  padding: 5rem;
+
+  &__field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  &__choice {
+  }
+
+  &__heading {
+    text-align: start;
+    margin-bottom: 3rem;
+  }
+
+  &__option {
+    list-style: none;
+    font-weight: 600;
+    font-size: 4rem;
+    transform: scale(1.5);
+  }
+
+  &__label {
+    margin-left: 1rem;
+  }
+}
