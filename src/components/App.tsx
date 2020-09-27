@@ -14,19 +14,19 @@ function App(): JSX.Element {
       <ToggleFeatures />
       <Router history={History}>
         <Switch>
-          <Route exact path='/login'>
+          <Route exact path='/LoginForm/login'>
             <LoginForm />
           </Route>
-          <Route exact path='/recover-password'>
+          <Route exact path='/LoginForm/recover-password'>
             <RecoverPasswordForm />
           </Route>
-          <Route exact path='/logged-in'>
+          <Route exact path='/LoginForm/logged-in'>
             <LoggedIn />
           </Route>
-          <Route exact path='/register'>
+          <Route exact path='/LoginForm/register'>
             <Register />
           </Route>
-          <Redirect exact from='/' to='/login' />
+          <Redirect exact from='/LoginForm' to='/LoginForm/login' />
         </Switch>
       </Router>
     </>
