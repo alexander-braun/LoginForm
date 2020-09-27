@@ -1,17 +1,29 @@
 import React from 'react';
-import { AppState } from '../../reducers';
 import { connect } from 'react-redux';
 import { useDispatch } from 'react-redux';
+
+//Redux
+import { AppState } from '../../reducers';
 import { toggleLoginOptions } from '../../actions/toggleLoginOptions';
 import { LoginOptions } from '../../actions/constants';
 
+/**
+ * Interfaces Setup
+ */
 interface ToggleFeatures {
   loginOptions: LoginOptions;
 }
 
+/**
+ * Toggle Features showcases the component with different features
+ * enabled/disabled
+ */
 const ToggleFeatures = ({ loginOptions }: ToggleFeatures) => {
   const dispatch = useDispatch();
 
+  /**
+   * Toggles selected features in redux state.
+   */
   const handleChange = (e: React.FormEvent<HTMLInputElement>): void => {
     const id = e.currentTarget.id;
     switch (id) {

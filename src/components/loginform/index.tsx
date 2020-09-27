@@ -1,19 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
+
+//Img
 import logo from './img/logo.jpg';
 import googlelogo from './img/btn_google_signin_dark_normal_web@2x.png';
 import facebooklogo from './img/fb-login-button-png-4-png-image-facebook-login-button-png-600_145 (1).png';
+
+//Components
 import HiddenSvg from '../svg/HiddenSvg';
 import VisibleSvg from '../svg/VisibleSvg';
 import UsericonSvg from '../svg/UsericonSvg';
 import LockiconSvg from '../svg/LockiconSvg';
-import { connect } from 'react-redux';
+
+//Redux stuff
 import { Authorized, LoginOptions } from '../../actions/constants';
 import { authorize } from '../../actions/authorize';
 import { AppState } from '../../reducers';
-import History from '../../helper/history';
-import { useDispatch } from 'react-redux';
 
+/**
+ * Interfaces setup
+ */
 interface loginData {
   username: string;
   password: string;
@@ -24,6 +32,9 @@ interface LoginForm {
   loginOptions: LoginOptions;
 }
 
+/**
+ * Main Login Form Component
+ */
 function LoginForm({ authorized, loginOptions }: LoginForm) {
   const dispatch = useDispatch();
   const [passwordVisible, togglePasswordVisible] = useState<boolean>(false);
@@ -34,6 +45,9 @@ function LoginForm({ authorized, loginOptions }: LoginForm) {
   const [usernameValid, setUsernameValid] = useState<boolean>(false);
   const [passwordValid, setPasswordValid] = useState<boolean>(false);
 
+  /**
+   * Tests password and username input field validity.
+   */
   const updateFieldValidity = (e: React.FormEvent<HTMLInputElement>): void => {
     const target = e.currentTarget.id;
     const value = e.currentTarget.value;
@@ -44,6 +58,9 @@ function LoginForm({ authorized, loginOptions }: LoginForm) {
     }
   };
 
+  /**
+   * Update Username / Password local state + test input fields validity.
+   */
   const handleChange = (e: React.FormEvent<HTMLInputElement>): void => {
     const { id, value } = e.currentTarget;
     setLoginData((prevState) => ({
@@ -54,6 +71,9 @@ function LoginForm({ authorized, loginOptions }: LoginForm) {
     updateFieldValidity(e);
   };
 
+  /**
+   * Login if username/password valid and dispatch authorization.
+   */
   const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     if (usernameValid && passwordValid) {
@@ -61,15 +81,22 @@ function LoginForm({ authorized, loginOptions }: LoginForm) {
     }
   };
 
+  /**
+   * Login with Facebook/Google is default assumed to be true.
+   */
   const mockExternalLogin = () => {
     dispatch(authorize(true));
   };
 
+  /**
+   * Check authorized status on change and
+   * route to '/logged-in'
+   */
   useEffect(() => {
     if (authorized) {
-      History.push('/logged-in');
+      window.location.hash = 'logged-in';
     }
-  });
+  }, [authorized]);
 
   return (
     <form className='login-form' onSubmit={(e) => e.preventDefault()}>

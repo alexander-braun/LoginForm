@@ -1,8 +1,12 @@
 import React from 'react';
-import logo from './logo.jpg';
-import History from '../../helper/history';
 import { Link } from 'react-router-dom';
 
+//Img
+import logo from './logo.jpg';
+
+/**
+ * Register Redirect Component
+ */
 function Register(): JSX.Element {
   return (
     <div className='login-form'>

@@ -1,28 +1,34 @@
 import React from 'react';
-import logo from './logo.jpg';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
+//Img
+import logo from './logo.jpg';
+
+//Redux stuff
 import { Authorized } from '../../actions/constants';
 import { AppState } from '../../reducers';
-import History from '../../helper/history';
 
+/**
+ * Interfaces setup
+ */
 interface RecoverPasswordForm {
   authorized: Authorized;
 }
 
+/**
+ * Recover Password Component
+ */
 function RecoverPasswordForm(): JSX.Element {
-  const handleClick = () => {
-    History.push('/login');
-  };
-
   return (
     <div className='login-form'>
       <div className='login-form__container'>
         <img src={logo} alt='Zertificon Logo' className='login-form__logo' />
         <h1 className='login-form__title'>Recover Password Form</h1>
       </div>
-      <button onClick={handleClick} className='logged-in__switch'>
+      <Link to='/login' className='logged-in__switch'>
         Login
-      </button>
+      </Link>
     </div>
   );
 }
