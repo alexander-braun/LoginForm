@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Password Visible SVG Icon
+ */
 const VisibleSvg = () => {
   return (
     <svg

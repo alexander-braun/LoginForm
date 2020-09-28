@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 //Img
 import logo from '../../img/logo.jpg';
 
-//Redux stuff
+//Redux
 import { Authorized } from '../../actions/constants';
 import { AppState } from '../../reducers';
 

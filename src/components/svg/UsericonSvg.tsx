@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * User Icon
+ */
 const UsericonSvg = () => {
   return (
     <svg

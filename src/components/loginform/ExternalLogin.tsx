@@ -8,6 +8,7 @@ import facebooklogo from './img/fb-login-button-png-4-png-image-facebook-login-b
 
 const LoginFormExternalLogin = () => {
   const dispatch = useDispatch();
+
   /**
    * Login with Facebook/Google is assumed to be true by default.
    */

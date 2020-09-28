@@ -7,7 +7,7 @@ import LoginFormDefaultLogin from './DefaultLogin';
 import ExternalLogin from './ExternalLogin';
 import RecoverPasswordPrompt from './RecoverPasswordPrompt';
 
-//Redux stuff
+//Redux
 import { Authorized, LoginOptions } from '../../actions/constants';
 import { AppState } from '../../reducers';
 

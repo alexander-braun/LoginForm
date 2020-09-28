@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Password Hidden SVG Icon
+ */
 const HiddenSvg = () => {
   return (
     <svg

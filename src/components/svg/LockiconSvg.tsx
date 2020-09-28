@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Password Icon
+ */
 const LockiconSvg = () => {
   return (
     <svg

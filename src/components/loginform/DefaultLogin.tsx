@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+//Redux
 import { authorize } from '../../actions/authorize';
 import { LoginOptions } from '../../actions/constants';
+import { AppState } from '../../reducers';
+
+//Components
 import HiddenSvg from '../svg/HiddenSvg';
 import VisibleSvg from '../svg/VisibleSvg';
 import UsericonSvg from '../svg/UsericonSvg';
 import LockiconSvg from '../svg/LockiconSvg';
-import { Link } from 'react-router-dom';
-import { AppState } from '../../reducers';
-import { connect } from 'react-redux';
 
 /**
  * Interfaces setup
@@ -22,6 +26,9 @@ interface LoginForm {
   loginOptions: LoginOptions;
 }
 
+/**
+ * Default Login Component for Username/Password - login
+ */
 const LoginFormDefaultLogin = ({ loginOptions }: LoginForm) => {
   const dispatch = useDispatch();
   const [passwordVisible, togglePasswordVisible] = useState<boolean>(false);
@@ -37,6 +44,11 @@ const LoginFormDefaultLogin = ({ loginOptions }: LoginForm) => {
    */
   const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.stopPropagation();
+
+    /**
+     * Replace if() with dispatch(login({username, password}))
+     * Only checks if password and username are longer then 8 characters.
+     */
     if (usernameValid && passwordValid) {
       dispatch(authorize(true));
     }
@@ -65,6 +77,9 @@ const LoginFormDefaultLogin = ({ loginOptions }: LoginForm) => {
       [id]: value,
     }));
 
+    /**
+     * After updating username/password -> validate
+     */
     updateFieldValidity(e);
   };
 

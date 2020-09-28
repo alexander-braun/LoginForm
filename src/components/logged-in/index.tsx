@@ -1,19 +1,34 @@
 import React from 'react';
-import logo from '../../img/logo.jpg';
 import { connect } from 'react-redux';
-import { Authorized } from '../../actions/constants';
-import { AppState } from '../../reducers';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+
+//Components
+import { Authorized } from '../../actions/constants';
+
+//Redux
+import { AppState } from '../../reducers';
 import { authorize } from '../../actions/authorize';
 
+//Img
+import logo from '../../img/logo.jpg';
+
+/**
+ * Interface Setup
+ */
 interface LoggedIn {
   authorized: Authorized;
 }
 
+/**
+ * Default Mock Logged In component representing logged-in state.
+ */
 function LoggedIn(): JSX.Element {
   const dispatch = useDispatch();
 
+  /**
+   * Unauthorize User
+   */
   const handleClick = () => {
     dispatch(authorize(false));
   };
