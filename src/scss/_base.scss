@@ -7,13 +7,9 @@
 }
 
 html {
-  font-size: 43%;
+  font-size: 50%;
   height: 100vh;
   width: 100vw;
-
-  @media only screen and (min-width: 375px) {
-    font-size: 50%;
-  }
 
   @media only screen and (min-width: 600px) {
     font-size: 55%;
