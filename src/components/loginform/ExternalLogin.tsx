@@ -20,7 +20,7 @@ const ExternalLogin = (): JSX.Element => {
   };
 
   return (
-    <div className='login-form__container'>
+    <div className='login-form__container login-form__container--external-login'>
       <div className='login-form__centered-text'>Or login with</div>
       <div className='login-form__alternative-methods'>
         <div className='login-form__extended-login-logo'>

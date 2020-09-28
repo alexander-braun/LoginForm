@@ -23,16 +23,43 @@
       padding: 0 4.8rem;
     }
 
-    &:nth-child(2) {
+    &--default-login {
       justify-content: flex-start;
       padding-top: 11px;
       height: calc(43.5rem / 2 + 1rem);
     }
 
-    &:nth-child(3) {
+    &--external-login {
       justify-content: space-around;
       height: auto;
     }
+  }
+
+  &__login-error {
+    padding: 0 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    @media only screen and (min-width: 600px) {
+      padding: 0 4.8rem;
+    }
+  }
+
+  &__close-error {
+    background: transparent;
+    border: none;
+  }
+
+  &__login-error-message {
+    background-color: $error-red;
+    color: white;
+    padding: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   &__register {
@@ -207,6 +234,12 @@
         text-decoration: underline;
       }
     }
+  }
+
+  &__close-icon {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    fill: white;
   }
 
   &__svg {

@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * User Icon
  */
-const UsericonSvg = (): JSX.Element => {
+const Usericon = (): JSX.Element => {
   return (
     <svg
       id='usericon'
@@ -29,4 +29,4 @@ const UsericonSvg = (): JSX.Element => {
   );
 };
 
-export default UsericonSvg;
+export default Usericon;

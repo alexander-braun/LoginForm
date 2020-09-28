@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Password Visible SVG Icon
  */
-const VisibleSvg = (): JSX.Element => {
+const Visible = (): JSX.Element => {
   return (
     <svg
       version='1.1'
@@ -27,4 +27,4 @@ const VisibleSvg = (): JSX.Element => {
   );
 };
 
-export default VisibleSvg;
+export default Visible;

@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Password Icon
  */
-const LockiconSvg = (): JSX.Element => {
+const Lockicon = (): JSX.Element => {
   return (
     <svg
       version='1.1'
@@ -32,4 +32,4 @@ const LockiconSvg = (): JSX.Element => {
   );
 };
 
-export default LockiconSvg;
+export default Lockicon;

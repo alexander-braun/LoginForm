@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Password Hidden SVG Icon
  */
-const HiddenSvg = (): JSX.Element => {
+const Hidden = (): JSX.Element => {
   return (
     <svg
       version='1.1'
@@ -32,4 +32,4 @@ c-14.187,7.04-29.973,11.307-46.827,11.307C175.787,330.72,128,282.933,128,224.053
   );
 };
 
-export default HiddenSvg;
+export default Hidden;
