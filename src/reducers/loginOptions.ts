@@ -5,10 +5,10 @@ import {
 } from '../actions/constants';
 
 const initialState = {
-  external: true,
-  recover: true,
-  icons: true,
-  register: true,
+  external: false,
+  recover: false,
+  icons: false,
+  register: false,
 };
 
 export const loginOptions = (

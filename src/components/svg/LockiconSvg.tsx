@@ -10,6 +10,7 @@ const LockiconSvg = () => {
       viewBox='0 0 486.733 486.733'
       fill='rgba(231, 21, 56, 0.8)'
       role='img'
+      className='login-form__lockicon'
     >
       <title>Lock Closed Icon</title>
       <g>

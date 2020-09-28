@@ -51,20 +51,6 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures) => {
           <input
             className='settings__option'
             type='checkbox'
-            name='External-Login'
-            value='external'
-            id='external'
-            onChange={handleChange}
-            checked={loginOptions.external}
-          />
-          <label className='settings__label' htmlFor='External-Login'>
-            External Login
-          </label>
-        </div>
-        <div className='settings__field'>
-          <input
-            className='settings__option'
-            type='checkbox'
             name='Recover-Password'
             value='recover'
             id='recover'
@@ -86,7 +72,7 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures) => {
             checked={loginOptions.icons}
           />
           <label className='settings__label' htmlFor='Helper-Icons'>
-            Helper Icons
+            Indicator Icons
           </label>
         </div>
         <div className='settings__field'>
@@ -101,6 +87,20 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures) => {
           />
           <label className='settings__label' htmlFor='Helper-Icons'>
             Register Field
+          </label>
+        </div>
+        <div className='settings__field'>
+          <input
+            className='settings__option'
+            type='checkbox'
+            name='External-Login'
+            value='external'
+            id='external'
+            onChange={handleChange}
+            checked={loginOptions.external}
+          />
+          <label className='settings__label' htmlFor='External-Login'>
+            External Login
           </label>
         </div>
       </form>

@@ -19,14 +19,16 @@ function LoggedIn(): JSX.Element {
   };
 
   return (
-    <div className='login-form'>
-      <div className='login-form__container'>
-        <img src={logo} alt='Zertificon Logo' className='login-form__logo' />
-        <h1 className='login-form__title'>Login Success</h1>
+    <div className='mock-form'>
+      <div className='mock-form__container'>
+        <img src={logo} alt='Zertificon Logo' className='mock-form__logo' />
+        <h1 className='mock-form__title'>Login Success</h1>
       </div>
-      <Link to='/login' onClick={handleClick} className='logged-in__switch'>
-        Log out!
-      </Link>
+      <div className='mock-form__container'>
+        <Link to='/login' onClick={handleClick} className='mock-form__go-back'>
+          Back to Login
+        </Link>
+      </div>
     </div>
   );
 }

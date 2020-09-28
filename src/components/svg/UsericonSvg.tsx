@@ -10,6 +10,7 @@ const UsericonSvg = () => {
       y='0px'
       viewBox='0 0 459 459'
       role='img'
+      className='login-form__usericon'
     >
       <title>User Icon</title>
       <g>

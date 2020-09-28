@@ -9,14 +9,16 @@ import logo from '../../img/logo.jpg';
  */
 function Register(): JSX.Element {
   return (
-    <div className='login-form'>
-      <div className='login-form__container'>
+    <div className='mock-form'>
+      <div className='mock-form__container'>
         <img src={logo} alt='Zertificon Logo' className='login-form__logo' />
-        <h1 className='login-form__title'>Register Form</h1>
+        <h1 className='mock-form__title'>Register Form</h1>
       </div>
-      <Link to='/login' className='logged-in__switch'>
-        Back to Login
-      </Link>
+      <div className='mock-form__container'>
+        <Link to='/login' className='mock-form__go-back'>
+          Back to Login
+        </Link>
+      </div>
     </div>
   );
 }
