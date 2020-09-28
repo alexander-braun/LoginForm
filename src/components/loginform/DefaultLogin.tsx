@@ -29,7 +29,7 @@ interface LoginForm {
 /**
  * Default Login Component for Username/Password - login
  */
-const LoginFormDefaultLogin = ({ loginOptions }: LoginForm) => {
+const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
   const dispatch = useDispatch();
   const [passwordVisible, togglePasswordVisible] = useState<boolean>(false);
   const [loginData, setLoginData] = useState<loginData>({
@@ -185,4 +185,4 @@ const mapStateToProps = (state: AppState): StateProps => ({
   loginOptions: state.loginOptions,
 });
 
-export default connect(mapStateToProps)(LoginFormDefaultLogin);
+export default connect(mapStateToProps)(DefaultLogin);

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../img/logo.jpg';
 
 /**
- * Register Redirect Component
+ * Register Redirect from login Component
  */
 function Register(): JSX.Element {
   return (

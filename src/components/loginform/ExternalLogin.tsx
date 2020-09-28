@@ -6,7 +6,10 @@ import { useDispatch } from 'react-redux';
 import googlelogo from './img/btn_google_signin_dark_normal_web@2x.png';
 import facebooklogo from './img/fb-login-button-png-4-png-image-facebook-login-button-png-600_145 (1).png';
 
-const LoginFormExternalLogin = (): JSX.Element => {
+/**
+ * Google / Facebook Login Component
+ */
+const ExternalLogin = (): JSX.Element => {
   const dispatch = useDispatch();
 
   /**
@@ -39,4 +42,4 @@ const LoginFormExternalLogin = (): JSX.Element => {
   );
 };
 
-export default LoginFormExternalLogin;
+export default ExternalLogin;

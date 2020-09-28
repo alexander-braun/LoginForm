@@ -3,7 +3,10 @@ import React from 'react';
 //Img
 import logo from '../../img/logo.jpg';
 
-const LoginFormHead = (): JSX.Element => {
+/**
+ * Head for Login Form
+ */
+const Head = (): JSX.Element => {
   return (
     <div className='login-form__container'>
       <img src={logo} alt='Zertificon Logo' className='login-form__logo' />
@@ -12,4 +15,4 @@ const LoginFormHead = (): JSX.Element => {
   );
 };
 
-export default LoginFormHead;
+export default Head;

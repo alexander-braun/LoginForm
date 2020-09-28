@@ -17,7 +17,7 @@ interface RecoverPasswordForm {
 }
 
 /**
- * Recover Password Component
+ * Recover Password Redirect from login Component
  */
 function RecoverPasswordForm(): JSX.Element {
   return (

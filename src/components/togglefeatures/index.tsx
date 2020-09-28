@@ -39,7 +39,7 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures): JSX.Element => {
         );
         break;
       default:
-        return;
+        break;
     }
   };
 
