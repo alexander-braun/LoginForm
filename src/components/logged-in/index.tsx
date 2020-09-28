@@ -29,7 +29,7 @@ function LoggedIn(): JSX.Element {
   /**
    * Unauthorize User
    */
-  const handleClick = () => {
+  const handleClick = (): void => {
     dispatch(authorize(false));
   };
 

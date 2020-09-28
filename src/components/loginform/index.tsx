@@ -27,7 +27,7 @@ function LoginForm({ authorized, loginOptions }: LoginForm): JSX.Element {
    * Check authorized status on change and
    * if authorized route to '/logged-in'
    */
-  useEffect((): void => {
+  useEffect(() => {
     if (authorized) {
       window.location.hash = 'logged-in';
     }

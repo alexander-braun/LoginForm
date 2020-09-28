@@ -37,16 +37,8 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
     username: '',
     password: '',
   });
-
-  /**
-   *
-   */
   const [usernameValid, setUsernameValid] = useState<boolean>(false);
   const [passwordValid, setPasswordValid] = useState<boolean>(false);
-
-  /**
-   * Error Message under login / password field. Changes on submit.
-   */
   const [loginError, toggleLoginError] = useState<boolean>(false);
 
   /**
@@ -58,7 +50,8 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
     /**
      * Replace if() with dispatch(login({username, password}))
      * Only checks if password and username are longer then 8 characters.
-     * If username and password are provided, loginError is displayed.
+     * If username and password are provided but are < 8 characters,
+     * loginError is displayed.
      */
     if (usernameValid && passwordValid) {
       dispatch(authorize(true));
@@ -69,6 +62,7 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
 
   /**
    * Tests password and username input field validity.
+   * Removes login error when user starts typing again.
    */
   const updateFieldValidity = (e: React.FormEvent<HTMLInputElement>): void => {
     const target = e.currentTarget.id;
@@ -101,11 +95,11 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
   };
 
   /**
-   * Checks if Login Error message and removes error after 5s.
+   * Checks if Login Error message and remove error after 5s.
    */
   useEffect(() => {
     if (loginError) {
-      setTimeout(() => toggleLoginError(false), 5000000);
+      setTimeout(() => toggleLoginError(false), 5000);
     }
   }, [loginError]);
 
@@ -117,6 +111,7 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
             <button
               onClick={() => toggleLoginError(false)}
               className='login-form__close-error'
+              name='close'
             >
               <CloseSvg />
             </button>
