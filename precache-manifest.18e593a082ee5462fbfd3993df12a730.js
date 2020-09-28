@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c533470d1d8a50e468052daa1564657",
+    "revision": "9e1f08233d87ee5b26fd22859bbd417e",
     "url": "/LoginForm/index.html"
   },
   {
-    "revision": "7bd4ba8f48d905230a3c",
-    "url": "/LoginForm/static/css/main.4738d8ab.chunk.css"
+    "revision": "34ac2f971ccaa2bfcda2",
+    "url": "/LoginForm/static/css/main.535ab84e.chunk.css"
   },
   {
     "revision": "6bf3bdbb15fcabd5eff3",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/LoginForm/static/js/2.4d820233.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7bd4ba8f48d905230a3c",
+    "revision": "34ac2f971ccaa2bfcda2",
     "url": "/LoginForm/static/js/main.5656a78a.chunk.js"
   },
   {
