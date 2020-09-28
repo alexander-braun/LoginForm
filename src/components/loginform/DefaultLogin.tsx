@@ -42,7 +42,7 @@ const LoginFormDefaultLogin = ({ loginOptions }: LoginForm) => {
   /**
    * Login if username/password valid and dispatch authorization.
    */
-  const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLButtonElement>): void => {
     e.stopPropagation();
 
     /**

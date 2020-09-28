@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Password Hidden SVG Icon
  */
-const HiddenSvg = () => {
+const HiddenSvg = (): JSX.Element => {
   return (
     <svg
       version='1.1'

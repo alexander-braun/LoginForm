@@ -18,7 +18,7 @@ interface ToggleFeatures {
  * Toggle Features showcases the component with different features
  * enabled/disabled
  */
-const ToggleFeatures = ({ loginOptions }: ToggleFeatures) => {
+const ToggleFeatures = ({ loginOptions }: ToggleFeatures): JSX.Element => {
   const dispatch = useDispatch();
 
   /**

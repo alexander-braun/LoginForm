@@ -6,13 +6,13 @@ import { useDispatch } from 'react-redux';
 import googlelogo from './img/btn_google_signin_dark_normal_web@2x.png';
 import facebooklogo from './img/fb-login-button-png-4-png-image-facebook-login-button-png-600_145 (1).png';
 
-const LoginFormExternalLogin = () => {
+const LoginFormExternalLogin = (): JSX.Element => {
   const dispatch = useDispatch();
 
   /**
    * Login with Facebook/Google is assumed to be true by default.
    */
-  const mockExternalLogin = () => {
+  const mockExternalLogin = (): void => {
     dispatch(authorize(true));
   };
 

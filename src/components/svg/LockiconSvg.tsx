@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Password Icon
  */
-const LockiconSvg = () => {
+const LockiconSvg = (): JSX.Element => {
   return (
     <svg
       version='1.1'

@@ -22,12 +22,12 @@ interface LoginForm {
 /**
  * Main Login Form Component
  */
-function LoginForm({ authorized, loginOptions }: LoginForm) {
+function LoginForm({ authorized, loginOptions }: LoginForm): JSX.Element {
   /**
    * Check authorized status on change and
    * if authorized route to '/logged-in'
    */
-  useEffect(() => {
+  useEffect((): void => {
     if (authorized) {
       window.location.hash = 'logged-in';
     }
