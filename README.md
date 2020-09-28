@@ -9,7 +9,7 @@
   <a href="#key-features">Key Features</a> •
 </p>
 
-![screenshot](https://raw.githubusercontent.com/alexander-braun/LoginForm/preview/Login-Form.gif)
+![screenshot](https://raw.githubusercontent.com/alexander-braun/LoginForm/master/preview/Login-Form.gif)
 
 ## Key Features
 
