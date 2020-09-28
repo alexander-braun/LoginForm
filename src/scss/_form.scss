@@ -186,6 +186,15 @@
       }
     }
 
+    &--valid {
+      color: $green;
+      border: 0.2rem solid $green-transparent;
+
+      &:hover {
+        border: 0.2rem solid $green;
+      }
+    }
+
     &--register {
       color: $font-red;
       box-sizing: border-box;
@@ -284,6 +293,6 @@
 
   .login-form__label--valid #usericon,
   .login-form__label--valid #lockicon {
-    fill: rgb(35, 226, 121);
+    fill: $green;
   }
 }

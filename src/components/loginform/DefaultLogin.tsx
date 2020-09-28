@@ -166,7 +166,9 @@ const LoginFormDefaultLogin = ({ loginOptions }: LoginForm) => {
         <button
           onClick={handleSubmit}
           type='submit'
-          className='login-form__button login-form__button--login'
+          className={`login-form__button login-form__button--login ${
+            usernameValid && passwordValid ? 'login-form__button--valid' : ''
+          }`}
         >
           LOGIN
         </button>
