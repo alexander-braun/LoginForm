@@ -145,7 +145,7 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
             className={`login-form__error-message ${usernameValid && 'hidden'}`}
             id='username-error'
           >
-            'Field is required'
+            Field is required
           </div>
         </div>
         <div className='login-form__field login-form__field--password'>
@@ -182,7 +182,7 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
               passwordValid ? 'hidden' : ''
             }`}
           >
-            'Field is required'
+            Field is required
           </div>
         </div>
         <div
