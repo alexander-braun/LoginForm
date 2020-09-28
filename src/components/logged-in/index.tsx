@@ -25,7 +25,7 @@ function LoggedIn(): JSX.Element {
         <h1 className='mock-form__title'>Login Success</h1>
       </div>
       <div className='mock-form__container'>
-        <Link to='/login' onClick={handleClick} className='mock-form__go-back'>
+        <Link to='/' onClick={handleClick} className='mock-form__go-back'>
           Back to Login
         </Link>
       </div>

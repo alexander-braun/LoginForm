@@ -15,7 +15,7 @@ function Register(): JSX.Element {
         <h1 className='mock-form__title'>Register Form</h1>
       </div>
       <div className='mock-form__container'>
-        <Link to='/login' className='mock-form__go-back'>
+        <Link to='/' className='mock-form__go-back'>
           Back to Login
         </Link>
       </div>

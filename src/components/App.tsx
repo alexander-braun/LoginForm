@@ -12,11 +12,10 @@ function App(): JSX.Element {
   return (
     <HashRouter basename='/'>
       <ToggleFeatures />
-      <Route exact path='/login' component={LoginForm} />
+      <Route exact path='/' component={LoginForm} />
       <Route exact path='/recover-password' component={RecoverPasswordForm} />
       <Route exact path='/logged-in' component={LoggedIn} />
       <Route exact path='/register' component={Register} />
-      <Redirect from='/' to='/login' />
     </HashRouter>
   );
 }
