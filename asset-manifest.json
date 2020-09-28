@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/LoginForm/static/css/main.e8c3ea39.chunk.css",
-    "main.js": "/LoginForm/static/js/main.15cf484d.chunk.js",
-    "main.js.map": "/LoginForm/static/js/main.15cf484d.chunk.js.map",
+    "main.css": "/LoginForm/static/css/main.48b2f7d7.chunk.css",
+    "main.js": "/LoginForm/static/js/main.5656a78a.chunk.js",
+    "main.js.map": "/LoginForm/static/js/main.5656a78a.chunk.js.map",
     "runtime-main.js": "/LoginForm/static/js/runtime-main.86aad825.js",
     "runtime-main.js.map": "/LoginForm/static/js/runtime-main.86aad825.js.map",
     "static/js/2.4d820233.chunk.js": "/LoginForm/static/js/2.4d820233.chunk.js",
     "static/js/2.4d820233.chunk.js.map": "/LoginForm/static/js/2.4d820233.chunk.js.map",
     "index.html": "/LoginForm/index.html",
-    "precache-manifest.995ace6955bd6fa101186ec4c17d3e25.js": "/LoginForm/precache-manifest.995ace6955bd6fa101186ec4c17d3e25.js",
+    "precache-manifest.bd62514e81a5c277f28666d3932fd425.js": "/LoginForm/precache-manifest.bd62514e81a5c277f28666d3932fd425.js",
     "service-worker.js": "/LoginForm/service-worker.js",
-    "static/css/main.e8c3ea39.chunk.css.map": "/LoginForm/static/css/main.e8c3ea39.chunk.css.map",
+    "static/css/main.48b2f7d7.chunk.css.map": "/LoginForm/static/css/main.48b2f7d7.chunk.css.map",
     "static/js/2.4d820233.chunk.js.LICENSE.txt": "/LoginForm/static/js/2.4d820233.chunk.js.LICENSE.txt",
     "static/media/logo.jpg": "/LoginForm/static/media/logo.d7ec9302.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.86aad825.js",
     "static/js/2.4d820233.chunk.js",
-    "static/css/main.e8c3ea39.chunk.css",
-    "static/js/main.15cf484d.chunk.js"
+    "static/css/main.48b2f7d7.chunk.css",
+    "static/js/main.5656a78a.chunk.js"
   ]
 }
