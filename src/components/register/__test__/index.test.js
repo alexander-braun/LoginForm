@@ -43,7 +43,7 @@ describe('Register Component', () => {
     component = setup();
   });
 
-  it('should render heading, logo and link', () => {
+  it('should render heading and link', () => {
     const heading = findByTestAttr(component, 'register-heading');
     const link = component.find('Link');
 
