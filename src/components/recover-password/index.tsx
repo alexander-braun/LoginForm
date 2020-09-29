@@ -20,6 +20,7 @@ interface RecoverPasswordForm {
  * Recover Password Redirect from login Component
  */
 function RecoverPasswordForm(): JSX.Element {
+  console.log(logo);
   return (
     <div className='mock-form'>
       <div className='mock-form__container'>

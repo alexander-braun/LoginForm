@@ -112,10 +112,12 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
               onClick={() => toggleLoginError(false)}
               className='login-form__close-error'
               name='close'
+              id='closeError'
             >
               <CloseSvg />
             </button>
-            <strong>Error!</strong>&nbsp;Login Failed.
+            <strong id='errortext'>Error!</strong>
+            &nbsp;Login Failed.
           </div>
         </div>
       )}
@@ -200,6 +202,7 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
           )}
           <button
             onClick={handleSubmit}
+            id='submit'
             type='submit'
             className={`login-form__button login-form__button--login ${
               usernameValid && passwordValid ? 'login-form__button--valid' : ''

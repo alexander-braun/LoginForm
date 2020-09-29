@@ -34,7 +34,7 @@ function LoggedIn(): JSX.Element {
   };
 
   return (
-    <div className='mock-form'>
+    <div className='mock-form' data-testid='mock-form'>
       <div className='mock-form__container'>
         <img src={logo} alt='Zertificon Logo' className='mock-form__logo' />
         <h1 className='mock-form__title'>Login Success</h1>
