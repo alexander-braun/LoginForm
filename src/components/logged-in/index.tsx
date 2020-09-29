@@ -36,8 +36,15 @@ function LoggedIn(): JSX.Element {
   return (
     <div className='mock-form' data-testid='mock-form'>
       <div className='mock-form__container'>
-        <img src={logo} alt='Zertificon Logo' className='mock-form__logo' />
-        <h1 className='mock-form__title'>Login Success</h1>
+        <img
+          data-test='logged-in-logo'
+          src={logo}
+          alt='Zertificon Logo'
+          className='mock-form__logo'
+        />
+        <h1 className='mock-form__title' data-test='logged-in-heading'>
+          Login Success
+        </h1>
       </div>
       <div className='mock-form__container'>
         <Link to='/' onClick={handleClick} className='mock-form__go-back'>

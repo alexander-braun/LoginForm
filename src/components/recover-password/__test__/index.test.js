@@ -4,33 +4,54 @@ import RecoverPassword from '../index';
 import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
-import logoImg from '../../../img/logo.jpg';
 import configureMockStore from 'redux-mock-store';
 
+//Img
+import logoImg from '../../../img/logo.jpg';
+
+//Utils
+import { findByTestAttr } from '../../../utils/TestHelper';
+
+/**
+ * Mock store setup
+ */
 const mockStore = configureMockStore();
 const store = mockStore({});
 
-const wrapper = mount(
-  <HashRouter>
-    <Provider store={store}>
-      <RecoverPassword />
-    </Provider>
-  </HashRouter>
-);
+/**
+ * Wrapper Setup
+ */
+const setup = (props = {}) => {
+  const wrapper = mount(
+    <HashRouter>
+      <Provider store={store}>
+        <RecoverPassword {...props} />
+      </Provider>
+    </HashRouter>
+  );
+  return wrapper;
+};
 
-it('should render heading and link', () => {
-  const heading = wrapper.find('h1');
-  const headingTextContent = heading.text();
-  const link = wrapper.find('Link');
-  const linkTextContent = link.text();
+describe('RecoverPassword component', () => {
+  let component;
+  beforeEach(() => {
+    component = setup();
+  });
 
-  expect(headingTextContent).toBe('Recover Password Form');
-  expect(linkTextContent).toBe('Back to Login');
-});
+  it('should render heading and link', () => {
+    const heading = findByTestAttr(
+      component,
+      'recover-password-heading'
+    ).text();
+    const link = component.find('Link').text();
 
-it('should render the correct logo', () => {
-  const logo = wrapper.find('img');
+    expect(heading).toBe('Recover Password Form');
+    expect(link).toBe('Back to Login');
+  });
 
-  expect(logo).toBeTruthy();
-  expect(logo.prop('src')).toEqual(logoImg);
+  it('should render the correct logo', () => {
+    const logo = findByTestAttr(component, 'recover-password-logo');
+
+    expect(logo.prop('src')).toEqual(logoImg);
+  });
 });

@@ -11,8 +11,15 @@ function Register(): JSX.Element {
   return (
     <div className='mock-form'>
       <div className='mock-form__container'>
-        <img src={logo} alt='Zertificon Logo' className='login-form__logo' />
-        <h1 className='mock-form__title'>Register Form</h1>
+        <img
+          data-test='register-logo'
+          src={logo}
+          alt='Zertificon Logo'
+          className='login-form__logo'
+        />
+        <h1 data-test='register-heading' className='mock-form__title'>
+          Register Form
+        </h1>
       </div>
       <div className='mock-form__container'>
         <Link to='/' className='mock-form__go-back'>

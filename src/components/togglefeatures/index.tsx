@@ -47,7 +47,7 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures): JSX.Element => {
     <div className='settings'>
       <h1 className='settings__heading'>Features</h1>
       <form className='settings__choice'>
-        <div className='settings__field'>
+        <div className='settings__field' data-test='toggle-features-option'>
           <input
             className='settings__option'
             type='checkbox'
@@ -61,7 +61,7 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures): JSX.Element => {
             Recover Password
           </label>
         </div>
-        <div className='settings__field'>
+        <div className='settings__field' data-test='toggle-features-option'>
           <input
             className='settings__option'
             type='checkbox'
@@ -75,7 +75,7 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures): JSX.Element => {
             Indicator Icons
           </label>
         </div>
-        <div className='settings__field'>
+        <div className='settings__field' data-test='toggle-features-option'>
           <input
             className='settings__option'
             type='checkbox'
@@ -89,7 +89,7 @@ const ToggleFeatures = ({ loginOptions }: ToggleFeatures): JSX.Element => {
             Register Field
           </label>
         </div>
-        <div className='settings__field'>
+        <div className='settings__field' data-test='toggle-features-option'>
           <input
             className='settings__option'
             type='checkbox'

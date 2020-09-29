@@ -121,7 +121,10 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
           </div>
         </div>
       )}
-      <div className='login-form__container login-form__container--default-login'>
+      <div
+        className='login-form__container login-form__container--default-login'
+        data-test='default-login'
+      >
         <div className='login-form__field login-form__field--username'>
           <input
             onChange={handleChange}
@@ -130,6 +133,7 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
             className='login-form__input'
             type='text'
             name='username'
+            data-test='username'
             required
             autoFocus
           />
@@ -166,6 +170,7 @@ const DefaultLogin = ({ loginOptions }: LoginForm): JSX.Element => {
             type={passwordVisible ? 'text' : 'password'}
             name='password'
             required
+            data-test='password'
           />
           <label
             htmlFor='password'

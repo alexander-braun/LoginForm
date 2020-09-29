@@ -20,12 +20,18 @@ interface RecoverPasswordForm {
  * Recover Password Redirect from login Component
  */
 function RecoverPasswordForm(): JSX.Element {
-  console.log(logo);
   return (
     <div className='mock-form'>
       <div className='mock-form__container'>
-        <img src={logo} alt='Zertificon Logo' className='mock-form__logo' />
-        <h1 className='mock-form__title'>Recover Password Form</h1>
+        <img
+          data-test='recover-password-logo'
+          src={logo}
+          alt='Zertificon Logo'
+          className='mock-form__logo'
+        />
+        <h1 data-test='recover-password-heading' className='mock-form__title'>
+          Recover Password Form
+        </h1>
       </div>
       <div className='mock-form__container'>
         <Link to='/' className='mock-form__go-back'>
