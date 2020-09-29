@@ -320,13 +320,15 @@
 
   &__input:focus ~ &__label &__usericon,
   &__input:focus ~ &__label &__lockicon,
+  &__input:valid ~ &__label &__usericon,
+  &__input:valid ~ &__label &__lockicon,
   &__label--valid &__usericon,
   &__label--valid &__lockicon {
     height: 1rem;
   }
 
-  .login-form__label--valid #usericon,
-  .login-form__label--valid #lockicon {
+  &__label--valid #usericon,
+  &__label--valid #lockicon {
     fill: $green;
   }
 }
