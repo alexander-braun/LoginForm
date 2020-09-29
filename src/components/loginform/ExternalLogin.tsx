@@ -20,11 +20,15 @@ const ExternalLogin = (): JSX.Element => {
   };
 
   return (
-    <div className='login-form__container login-form__container--external-login'>
+    <div
+      className='login-form__container login-form__container--external-login'
+      data-test='external-login'
+    >
       <div className='login-form__centered-text'>Or login with</div>
       <div className='login-form__alternative-methods'>
         <div className='login-form__extended-login-logo'>
           <img
+            data-test='external-login-facebook'
             onClick={mockExternalLogin}
             alt='Google Login'
             src={facebooklogo}
@@ -32,6 +36,7 @@ const ExternalLogin = (): JSX.Element => {
         </div>
         <div className='login-form__extended-login-logo'>
           <img
+            data-test='external-login-google'
             onClick={mockExternalLogin}
             alt='Google Login'
             src={googlelogo}

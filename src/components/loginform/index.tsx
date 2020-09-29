@@ -34,7 +34,11 @@ function LoginForm({ authorized, loginOptions }: LoginForm): JSX.Element {
   }, [authorized]);
 
   return (
-    <form className='login-form' onSubmit={(e) => e.preventDefault()}>
+    <form
+      className='login-form'
+      onSubmit={(e) => e.preventDefault()}
+      data-test='login-form-wrapper'
+    >
       <LoginFormHead />
       <LoginFormDefaultLogin />
       {loginOptions.external && <ExternalLogin />}

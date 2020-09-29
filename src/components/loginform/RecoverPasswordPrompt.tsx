@@ -6,7 +6,10 @@ import { Link } from 'react-router-dom';
  */
 const RecoverPasswordPrompt = (): JSX.Element => {
   return (
-    <div className='login-form__register-redirect'>
+    <div
+      className='login-form__register-redirect'
+      data-test='recover-password-prompt'
+    >
       <div className='login-form__register-text'>
         Forgot your password?&nbsp;
       </div>
