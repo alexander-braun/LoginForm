@@ -10,7 +10,7 @@ import Register from './register';
 
 function App(): JSX.Element {
   return (
-    <HashRouter basename='/'>
+    <HashRouter basename='/' data-test='main-app-component'>
       <ToggleFeatures />
       <Route exact path='/' component={LoginForm} />
       <Route exact path='/recover-password' component={RecoverPasswordForm} />
